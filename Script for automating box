@@ -1,0 +1,36 @@
+//Webdav connection for box.com
+
+sudo apt-get install davfs2
+//create a mount directory to be backed up
+
+mkdir /home/pi/box
+
+sudo mount -o uid=pi -o gid=pi -t davfs https://dav.box.com/dav /home/pi/box
+// prompted for uname and password
+
+sudo umount /home/pi/box
+//unmount only if all docs are closed
+
+//*********************** Automating the process****************************
+vi /etc/davfs2/secrets
+https://dav.box.com/dav  username  password
+
+sudo usermod -aG davfs2 pi
+// you'll have to give normal users the permission to run davfs2, without the need for root privileges. For that you'll have to enter the next command:
+
+sudo dpkg-reconfigure davfs2
+
+//finally mounting the cloud drive can be done by:
+
+mount -o uid=pi -o gid=pi -t davfs https://dav.box.com/dav /home/pi/box
+
+//and unmounting
+fusermount -u /home/pi/box
+
+// for full automation:
+
+vi /etc/fstab
+
+https://dav.box.com/dav /home/pi/box  davfs  rw,noexec,auto,user,async,_netdev,uid=pi,gid=pi  0  0
+
+//drive mounts on boot
