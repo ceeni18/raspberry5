@@ -1,0 +1,638 @@
+
+<!DOCTYPE html><html id="apartmentlist" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"><head>
+<meta charset="UTF-8" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fd800ec412","applicationID":"3475032","transactionName":"e1oLERdeWV0BRx1FFkgaBgwRSGpdBVtWXwpfagEAFlpBXhQ=","queueTime":0,"applicationTime":143,"agent":"js-agent.newrelic.com/nr-768.min.js","userAttributes":"QxcBHAteFwtGQldUSgkXSUcXVFNUFkdXREYCFysKRUNQVwFHQFMWGEYAEUcdF0MBWF1CAWdcFUdfEwQBXBsABlUWBF1QSwkAE0gXQVMWTlAXOgtQWFRGDxBBE08bBBUEQ0FcAVtGWg1LQUsGClwXHUZAQVMWZ1QCAAtFFwtGeF1MDVRZBEpQHwURTHhTVQ1WQQoWDQoVeApBV1pEdVQGRSpiFWlEBAJpXWcATEUkQUVdAWJXVC9RQUpQVgYbAlIVGn0sbHgpSUVdXFoBFXVTB1NaTEUmWUdeCVAdAlIWBUtXUQgFH1wFEmUFXlQXDEoEBgZKBgQUSBpAFwlHCxdZEEFCRV4XGhISEh9UQQVHRlsBVkEJDBZFG1ILWB1VBRdGBAsRUBhSCFRAV1taUAEWQAR3FFFxDwZCWlABFkAEdxRRcQ8HQlpaEAsBQggCUhsHAFYIAUBXJhwEA1cbAgZUAAJAVyYCDR9VAgIPXR0HJkhUAwUfXAIEBV0eXQQWOlBcQztWXVgAUUEMCgtYW1ZZWlwQDFlGOgEMQl1GBUZaUxYFWgtDDVBGbgNMXwsLVhMNBBZuWl87RltCAWdZBBALVUdIWVpcEAxZRjoVCl5ZDAtbFFsFSGoGAAtFUENZBgUYVw4MVVJAA3YcVQcDGF0LDVNWQ1xUQTtPXVkJBQxDFRdYVlQ7WFNOWQoHVVVDRlxFDGpCVxZTXAsCWF5bE0gXUUMWSlALETpERlQWaltSRgIEU1NXAgYFXA1P"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQUOVF5ACwcHUVFRBQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="Here are the top Santa Clara Apartments for Rent ASAP. View photos, floor plans &amp; more. Which one would you live in?" name="description" />
+<meta content="228210500341-q5lsr2ppdiefvql7u2n60kh3lf5rthed.apps.googleusercontent.com" name="google-signin-client_id" />
+
+<link href="/ca/santa-clara" rel="canonical" />
+<meta name="robots" content="noindex, follow" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jwwwNdBXaSlxF+nW3UwzvSKohtQwOdtrfrXL8U7mm0B/WsyLaK6LEjt52k/hg9DDaxZL7eD1rUJHnAZ9SXm2sg==" />
+<link rel="shortcut icon" type="image/x-icon" href="https://cdn2.apartmentlist.com/assets/favicon-c9fc8178664afda3db88ba048baaa453.ico" />
+<title>20 Best Apartments in Santa Clara, CA (with pictures)!</title>
+<link rel="stylesheet" media="screen" href="https://cdn3.apartmentlist.com/assets/bootstrap-31c484dd250873d790ad77609e0762d4.css" />
+<link rel="stylesheet" media="screen" href="https://cdn1.apartmentlist.com/assets/application-bf653431809eebcbd74cbfb58de38160.css" />
+<script src="https://cdn3.apartmentlist.com/assets/compile/modernizr-52cd6b41dd1001d26aa57dd21e54edb2.js"></script>
+
+<script type="text/javascript">
+  //<![CDATA[
+    // Init hash for dynamic objects (ex. Backbone view instances)
+    window.app = window.app || {};
+    
+    // Set page information from controller and action
+    app.page = {
+      'controller': 'srp',
+      'action': 'city-landing'
+    };
+    
+    // Init hash for static objects (ex. Backbone view class)
+    window.vb = window.vb || {};
+    
+    // Declare namespaces
+    vb.ads = {};
+    vb.api = {};
+    vb.config = {};
+    vb.model = {};
+    vb.search = {};
+    vb.service = {};
+    vb.text = {};
+    vb.view = {};
+    
+    // Declare constants
+    vb.adminMode = false;
+    vb.apiHost = 'https://api.apartmentlist.com';
+    vb.apiKey = '3d68b77b52cc4ac7902b103e6c8834e4';
+    vb.browserMeta = 'chrome modern mac webkit';
+    vb.browserName = 'Chrome';
+    vb.currentAlUserJson = {"email":null,"first_name":null,"id":166233488,"has_been_evicted":null,"has_confirmed":{},"has_seen":{"cta_coachmark":1},"last_name":null,"monthly_income":{"max":null,"min":null},"phone_numbers":[],"preferences":{"amenities":["has_air_conditioning","has_dishwasher","has_gym","has_on_site_laundry","has_pool","has_parking"],"beds":[0,1],"baths":[],"price_min":null,"price_max":2200,"location_ids":[649626],"move_in_date":null,"pet_details":null,"email_consent":null,"phone_consent":null,"call_consent":null,"preferred_contact_method":null,"user_id":166233488,"location":{"id":649626,"slug":"/ca/santa-clara","type":"city","name":"Santa Clara","display_name":"Santa Clara, CA","long_name":"Santa Clara, California","bounds":{"ne":{"lat":37.41876,"lon":-121.929689},"sw":{"lat":37.32295,"lon":-122.00457}},"coordinates":{"lat":37.36493440503688,"lon":-121.96784784634092},"parents":{}}},"role":"guest","settings":{"map_center":"37.36907,-121.93863","map_zoom":9,"rental_types":null,"verified":false}};
+    vb.facebookAppId = '161786420551491';
+    vb.featureFlags = {"bugsnag_flag":true,"criteo_ppl_flag":true,"ldp_reskin_flag":false,"midpoint_guidance_flag":false,"no_cache_if_logged_in_flag":true,"cta_test":false,"quiz_test":true,"search_test":true};
+    vb.gaAccount = 'UA-23312730-1';
+    vb.googleClientId = '228210500341-q5lsr2ppdiefvql7u2n60kh3lf5rthed.apps.googleusercontent.com';
+    vb.iOSRedirectURL = '';
+    vb.isHttps = 'https:' === document.location.protocol;
+    vb.isMobile = (window.innerWidth < 980);
+    vb.isProduction = true;
+    vb.quizTeaser = 'not eligible';
+    vb.segmentWriteKey = '8bx6YLE9eN6SlkvXG4asMQWTzgj4DuT7';
+    vb.shouldLoadApsalar = false;
+    vb.sourceApp = 'ApartmentList';
+    
+    // List of all a/b tests and chosen variations for current user
+    vb.experimentVariations = {
+      'cta_test': 'cta-test-11',
+      'cta_variation': vb.isMobile ? 'mobile-control' :
+                                     'desktop-control',
+      'quiz_test': 'quiz-test-36',
+      'quiz_variation': vb.isMobile ? 'mobile-control' :
+                                      'desktop-control',
+      'search_test': 'search-test-2',
+      'search_variation': vb.isMobile ? 'mobile-control-cycling' :
+                                        'desktop-control-cycling'
+    };
+    
+    // Unlike vb.abTestVariations, this list is a subset of tests that we want to track in GA
+    // See google_analytics.js about the maximum number of feature flags we can track
+    vb.trackedFeatureFlags = {
+      'quiz_test': vb.isMobile ? 'mobile-control' :
+                                 'desktop-control',
+      'search_test': vb.isMobile ? 'mobile-control-cycling' :
+                                   'desktop-control-cycling'
+    
+    };
+  //]]>
+</script>
+
+<script src="https://cdn3.apartmentlist.com/assets/application-e22238035d79ec0eb5638c684419bf2f.js"></script>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<link href="https://cdn2.apartmentlist.com/assets/touch-icon-iphone-af6d0587d468d373fac96878da69d533.png" rel="apple-touch-icon" />
+<link href="https://cdn2.apartmentlist.com/assets/touch-icon-ipad-fc02ea271f33e6436b33fad3305ddc24.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="https://cdn2.apartmentlist.com/assets/touch-icon-iphone4-6efa32607552a3db3a44e7c5fc8247cb.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
+<meta content="app-id=659694038" name="apple-itunes-app" />
+<script async="async" data-apikey="fd2190c7b22ffa6c0c484286fbc2418f" src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js"></script>
+</head><body class="srp-controller city-landing-action"><div id="notification-banner" style="display: none">
+<a class="notification-banner-close" href="#">
+<i class="al al-times"></i>
+</a>
+<div class="notification-banner-content">
+
+</div>
+</div>
+
+<div class="hidden-sticky-filters">
+<nav class="navbar header hidden-map hidden-slideshow" id="header-navbar">
+<div class="container">
+<div class="hidden-logged-in">
+<a class="navbar-brand" href="/">
+<div class="logo"></div>
+</a>
+<div class="text-uppercase navbar-right">
+<a class="login-btn btn btn-default header-menu-btn" href="/users/login" role="button">
+<span class="header-menu-btn-text">Log in</span>
+</a>
+</div>
+</div>
+<div class="hidden-logged-out">
+<a class="navbar-brand" href="/ca/santa-clara?beds%5B%5D=0&amp;beds%5B%5D=1&amp;has_air_conditioning=on&amp;has_dishwasher=on&amp;has_gym=on&amp;has_on_site_laundry=on&amp;has_pool=on&amp;map_center=37.36907%2C-121.93863&amp;map_zoom=9&amp;price_max=2200&amp;with_parking=on">
+<div class="logo"></div>
+</a>
+<div class="text-uppercase navbar-right">
+<a class="profile-btn btn btn-default header-menu-btn" href="/profile" role="button">
+<span class="header-menu-btn-text">Profile</span>
+<div class="active-bar"></div>
+</a>
+<a class="active btn btn-default header-menu-btn matches-btn" href="#" role="button">
+<span class="header-menu-btn-text">Matches</span>
+<div class="active-bar"></div>
+</a>
+<a class="shortlist-btn btn btn-default header-menu-btn" href="/shortlist" role="button">
+<span class="header-menu-btn-text">
+Short list
+<div class="animation-target" id="shortlist-circle">
+<div class="count"></div>
+</div>
+</span>
+<div class="active-bar"></div>
+</a>
+</div>
+</div>
+</div>
+</nav>
+
+</div>
+<div id="filter-sticky-bar">
+<div class="hidden-md hidden-lg" id="filter-sticky-btn-xs"><button class="filter-toggle btn btn-primary btn-upper btn-shadow" data-expander="data-expander" data-manual="data-manual" data-target="#filter-control-container">
+<span class="filter-btn-text">9 Preferences</span>
+<i class="al al-angle-down"></i>
+</button><div class="sort-menu-container" id="sticky-sort-mobile">
+<button class="btn btn-default btn-filter btn-upper btn-shadow sort-menu-btn" data-expander="data-expander" data-target="#sticky-sort-mobile .sort-menu">
+<span class="sort-menu-btn-title">Relevance</span>
+<i class="al al-angle-down"></i>
+</button>
+<div class="sort-menu">
+<a class="sort-menu-item" data-label="Lowest Price" data-name="price_asc" data-value="price_asc" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Lowest Price</div></a>
+
+<a class="sort-menu-item" data-label="Highest Price" data-name="price_desc" data-value="price_desc" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Highest Price</div></a>
+
+<a class="active sort-menu-item" data-label="Relevance" data-name="relevance" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Relevance</div></a>
+
+</div>
+</div></div>
+<div class="filter-banner hidden-xs hidden-sm" id="filter-sticky-btn-md">
+<div class="container">
+<div class="row">
+<div class="sticky-table-layout">
+<div class="sticky-table-col heart-col">
+<a class="heart-logo" href="/"></a>
+</div>
+<div class="sticky-table-col sentence-col">
+<div class="filter-sentence">
+<span>I'm looking in</span>
+<span class="filter-sentence-location filter-underline">Santa Clara</span>
+<span>for</span>
+<span class="filter-underline">Studio and 1 Bed</span>
+<span>up to</span>
+<span class="filter-underline">$2200</span>
+
+</div>
+</div>
+<div class="sticky-table-col actions-col">
+<button class="filter-toggle btn btn-primary btn-filter btn-upper btn-shadow" data-expander="data-expander" data-manual="data-manual" data-target="#filter-control-container">
+<span class="filter-btn-text">9 Preferences</span>
+<i class="al al-angle-down"></i>
+</button>
+<div class="sort-menu-container" id="sticky-sort-desktop">
+<button class="btn btn-default btn-filter btn-upper btn-shadow sort-menu-btn" data-expander="data-expander" data-target="#sticky-sort-desktop .sort-menu">
+<span class="sort-menu-btn-title">Relevance</span>
+<i class="al al-angle-down"></i>
+</button>
+<div class="sort-menu">
+<a class="sort-menu-item" data-label="Lowest Price" data-name="price_asc" data-value="price_asc" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Lowest Price</div></a>
+
+<a class="sort-menu-item" data-label="Highest Price" data-name="price_desc" data-value="price_desc" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Highest Price</div></a>
+
+<a class="active sort-menu-item" data-label="Relevance" data-name="relevance" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Relevance</div></a>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="container hidden-sticky-filters" id="filter-hero-container">
+<div class="jumbotron" id="filter-hero">
+<div class="filter-banner" id="filter-summary">
+<div class="filter-sentence clearfix">
+<span>I'm looking in</span>
+<span class="filter-sentence-location filter-underline">Santa Clara</span>
+<span>for</span>
+<span class="filter-underline">Studio and 1 Bed</span>
+<span>up to</span>
+<span class="filter-underline">$2200</span>
+
+</div>
+<button class="filter-toggle btn btn-primary btn-filter btn-upper btn-shadow" data-expander="data-expander" data-manual="data-manual" data-target="#filter-control-container" id="filter-summary-btn">
+<span class="filter-btn-text">9 Preferences</span>
+<i class="al al-angle-down" id="filter-btn-icon"></i>
+</button>
+<div class="sort-menu-container" id="summary-sort">
+<button class="btn btn-default btn-filter btn-upper btn-shadow sort-menu-btn" data-expander="data-expander" data-target="#summary-sort .sort-menu">
+<span class="sort-menu-btn-title">Relevance</span>
+<i class="al al-angle-down"></i>
+</button>
+<div class="sort-menu">
+<a class="sort-menu-item" data-label="Lowest Price" data-name="price_asc" data-value="price_asc" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Lowest Price</div></a>
+
+<a class="sort-menu-item" data-label="Highest Price" data-name="price_desc" data-value="price_desc" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Highest Price</div></a>
+
+<a class="active sort-menu-item" data-label="Relevance" data-name="relevance" href="#"><div class="sort-menu-item-icon-container"><i class="al al-check"></i></div><div class="sort-menu-item-label">Relevance</div></a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="container" id="filter-control-container">
+<form id="filter-form" method="get">
+<div class="content row" id="filter-control-panel">
+<div class="col-xs-12 hidden" id="filter-error">
+<div class="row">
+<div class="col-xs-12" id="error-message"></div>
+</div>
+</div>
+<div class="filter-control-col col-xs-12 col-md-4">
+<div class="row">
+<div class="filter-control col-xs-12" id="filter-control-location">
+<div class="form-group" id="filter-form-group-location">
+<label class="sr-only" for="filter-input-location">Location</label>
+<div class="input-icon">
+<i class="al al-map-marker"></i>
+</div><input autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control has-icon" id="filter-input-location" name="location" placeholder="Enter Location" tabindex="1" type="search" value="Santa Clara, CA" /></div>
+</div>
+<div class="filter-control col-xs-12" id="filter-control-beds">
+<div class="btn-group btn-group-justified" id="filter-beds">
+<div class="active btn btn-default btn-upper" data-value="0" href="#">
+<span class="btn-text">Studio</span>
+</div>
+<div class="active btn btn-default btn-upper" data-value="1" href="#">
+<span class="btn-text">1 Bed</span>
+</div>
+<div class="btn btn-default btn-upper" data-value="2" href="#">
+<span class="btn-text">2 Bed</span>
+</div>
+<div class="btn btn-default btn-upper" data-value="3" href="#">
+<span class="btn-text">3+</span>
+</div>
+</div>
+</div>
+<div class="filter-control col-xs-12" id="filter-control-baths">
+<div class="btn-group btn-group-justified" id="filter-baths">
+<div class="btn btn-default btn-upper" data-value="1" href="#">
+<span class="btn-text">1 Bath</span>
+</div>
+<div class="btn btn-default btn-upper" data-value="2" href="#">
+<span class="btn-text">2 Bath</span>
+</div>
+<div class="btn btn-default btn-upper" data-value="3" href="#">
+<span class="btn-text">3+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="filter-control-col col-xs-12 col-md-4">
+<div class="row">
+<div class="filter-control col-xs-12" id="filter-control-price-range">
+<div class="text-center clearfix" id="price-range-display">
+<input class="filter-price" id="filter-price-min" tabindex="2" type="text" value="" /><span>&nbsp;to&nbsp;</span><input class="filter-price" id="filter-price-max" tabindex="3" type="text" value="2200" /><span>&nbsp;a month</span></div>
+<div class="text-center" id="price-range-slider-container">
+<div id="price-range-slider"></div>
+</div>
+</div>
+<div class="filter-control col-xs-12" id="filter-control-pets">
+<div class="btn-group btn-group-justified">
+<div class="btn btn-default btn-upper" data-name="is_cat_friendly" id="filter-cats">
+<span class="btn-text">
+<i class="al al-amenity-cat"></i>
+<span>Cats</span>
+</span>
+</div>
+<div class="btn btn-default btn-upper" data-name="is_dog_friendly" id="filter-dogs">
+<span class="btn-text">
+<i class="al al-amenity-dog"></i>
+<span>Dogs</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="filter-control-col col-xs-12 col-md-4">
+<div class="row">
+<div class="filter-control col-xs-12" id="filter-control-laundry">
+<div class="alist-menu-container" data-empty="data-empty" data-multiple="data-multiple" id="laundry-menu-container">
+<div class="alist-menu active-background absolute-md" data-caret="#laundry-menu .alist-menu-btn .al-angle-down" data-expander="data-expander" data-manual="data-manual" data-target="#laundry-menu .alist-menu-list" data-title="Laundry" id="laundry-menu">
+<div class="alist-menu-btn">
+<div class="ellipse-container"><i class="al al-amenity-washer alist-menu-icon"></i><span class="alist-menu-btn-title" id="laundry-menu-title">Laundry</span>
+</div>
+<i class="al al-angle-down alist-menu-caret"></i>
+</div>
+<div class="alist-menu-list">
+<a class="alist-menu-item" data-label="In-unit Laundry" data-name="has_in_unit_laundry" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">In-unit Laundry</span></a>
+
+<a class="active alist-menu-item" data-label="On-site Laundry" data-name="has_on_site_laundry" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">On-site Laundry</span></a>
+
+<a class="alist-menu-item" data-label="Washer / Dryer Connections" data-name="has_laundry_connections" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Washer / Dryer Connections</span></a>
+
+</div>
+</div>
+</div>
+</div>
+<div class="filter-control filter-control-menu col-xs-12" id="filter-control-features">
+<div class="alist-menu-container" data-empty="data-empty" data-multiple="data-multiple" id="features-menu-container">
+<div class="alist-menu active-background absolute-md" data-caret="#features-menu .alist-menu-btn .al-angle-down" data-expander="data-expander" data-manual="data-manual" data-target="#features-menu .alist-menu-list" data-title="Other Features" id="features-menu">
+<div class="alist-menu-btn">
+<div class="ellipse-container"><i class="al al-home alist-menu-icon"></i><span class="alist-menu-btn-title" id="features-menu-title">Other Features</span>
+</div>
+<i class="al al-angle-down alist-menu-caret"></i>
+</div>
+<div class="alist-menu-list">
+<div class="alist-menu-section-title">Amenities</div>
+<a class="alist-menu-item" data-label="Accessible" data-name="is_accessible" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Accessible</span></a>
+
+<a class="active alist-menu-item" data-label="Air Conditioning" data-name="has_air_conditioning" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Air Conditioning</span></a>
+
+<a class="alist-menu-item" data-label="Balcony/deck/patio" data-name="has_balcony" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Balcony/deck/patio</span></a>
+
+<a class="active alist-menu-item" data-label="Dishwasher" data-name="has_dishwasher" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Dishwasher</span></a>
+
+<a class="alist-menu-item" data-label="Elevator" data-name="has_elevator" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Elevator</span></a>
+
+<a class="alist-menu-item" data-label="Furnished" data-name="has_furnished_option" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Furnished</span></a>
+
+<a class="alist-menu-item" data-label="Garage" data-name="has_garage" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Garage</span></a>
+
+<a class="active alist-menu-item" data-label="Gym" data-name="has_gym" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Gym</span></a>
+
+<a class="alist-menu-item" data-label="Hardwood floors" data-name="has_hardwood_floors" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Hardwood floors</span></a>
+
+<a class="active alist-menu-item" data-label="Parking" data-name="with_parking" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Parking</span></a>
+
+<a class="active alist-menu-item" data-label="Pool" data-name="has_pool" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Pool</span></a>
+
+<a class="alist-menu-item" data-label="Verified" data-name="verified" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Verified</span></a>
+
+<div class="alist-menu-section-title">Rental Types</div>
+<a class="alist-menu-item" data-label="Apartment" data-name="apartments" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Apartment</span></a>
+
+<a class="alist-menu-item" data-label="Condo" data-name="condos" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">Condo</span></a>
+
+<a class="alist-menu-item" data-label="House" data-name="houses" href="#"><i class="al al-check"></i><i class="al al-square-o"></i><span class="alist-menu-item-label">House</span></a>
+
+</div>
+</div>
+</div>
+</div>
+<div class="filter-control col-xs-12" id="filter-control-actions">
+<div class="row" id="filter-action-row">
+<div class="col-xs-4" id="clear-btn-col">
+<button class="btn btn-default btn-upper btn-block" id="filter-clear-btn" type="button">Clear</button>
+</div>
+<div class="col-xs-8">
+<button class="btn btn-primary btn-upper btn-block" id="filter-apply-btn" type="submit">Set Preferences</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</form>
+</div>
+<div class="hidden-non-sticky-filters hidden-sticky-filters">
+<div id="filter-overlay"></div>
+<div class="container" id="search-result-container">
+<div class="row" id="search-result-row">
+<div class="col-xs-12 col-md-listings" id="listings-col">
+<div id="listings-overlay">
+<div id="listings-overlay-content">
+<img src="https://cdn1.apartmentlist.com/assets/apartmentlist/preload-petite-b82aea1d2d3e10d2c5c4d5c9809aab33.gif" />
+</div>
+</div>
+<div class="row" id="result-summary-row" style="display: none;">
+<div class="col-xs-12" id="result-summary">
+<h1>
+<div class="result">
+<span id="result-total">0</span>
+<span>apartments for rent</span>
+<span id="result-preposition">near</span>
+<span id="result-location">Santa Clara, CA</span>
+</div>
+</h1>
+</div>
+
+</div>
+<div class="listing-collection row" id="listings-row">
+
+</div>
+<div class="map-bounds-too-large row" id="no-listings-row">
+<div class="col-no-listings col-xs-12 text-center" id="no-listings">
+<img alt="Apartment List detective logo" src="https://cdn1.apartmentlist.com/assets/apartmentlist/detective-b112d1c2fdfc52190ce0a99f1ba4a09a.png" />
+<h3>Keep Looking!</h3>
+<p>
+Try removing some filters or broadening your
+<br />
+search area to see more results.
+</p>
+</div>
+
+<div class="col-no-listings col-xs-12 text-center" id="map-bounds-too-large">
+<img alt="Apartment List detective logo" src="https://cdn1.apartmentlist.com/assets/apartmentlist/detective-b112d1c2fdfc52190ce0a99f1ba4a09a.png" />
+<h3>Zoom in to see more.</h3>
+<p>
+Trying to get a feel for the larger area? No problem.
+<br />
+When you're ready, zoom in again to see pins and listings.
+</p>
+</div>
+
+<div class="col-no-listings col-xs-12 text-center" id="listings-error">
+<img alt="Apartment List sad heart" src="https://cdn2.apartmentlist.com/assets/apartmentlist/sad-heart-13cfa0ad44040f96de1dcb3123083f1c.png" />
+<h3>Something went wrong.</h3>
+<p>
+Please try your search again or reload the page.
+</p>
+</div>
+
+</div>
+
+<div class="row" id="pagination-row">
+<div class="col-xs-12 text-center" id="pagination"><a class="btn btn-default btn-upper hidden pagination-btn" data-page="0" href="/ca/santa-clara?beds%5B%5D=0&amp;beds%5B%5D=1&amp;bounds=36.56204%2C-123.00087%2C38.17099%2C-120.87639&amp;has_air_conditioning=on&amp;has_dishwasher=on&amp;has_gym=on&amp;has_on_site_laundry=on&amp;has_pool=on&amp;map_center=37.36907%2C-121.93863&amp;map_zoom=9&amp;price_max=2200&amp;with_parking=on" id="prev-page-btn"><i class="al al-angle-left"></i>
+<span class="btn-text">Prev</span></a><a class="btn btn-default btn-upper hidden hidden-xs pagination-btn" data-page="1" href="/ca/santa-clara?beds%5B%5D=0&amp;beds%5B%5D=1&amp;bounds=36.56204%2C-123.00087%2C38.17099%2C-120.87639&amp;has_air_conditioning=on&amp;has_dishwasher=on&amp;has_gym=on&amp;has_on_site_laundry=on&amp;has_pool=on&amp;map_center=37.36907%2C-121.93863&amp;map_zoom=9&amp;price_max=2200&amp;with_parking=on" id="first-page-btn"><span class="btn-text">1</span></a><span class="hidden hidden-xs" id="after-first-page-ellipsis">
+<i class="al al-ellipsis-h"></i>
+</span>
+<div id="page-window"><a class="pagination-btn btn btn-default btn-upper" data-page="1" disabled="disabled" href="/ca/santa-clara?beds%5B%5D=0&amp;beds%5B%5D=1&amp;bounds=36.56204%2C-123.00087%2C38.17099%2C-120.87639&amp;has_air_conditioning=on&amp;has_dishwasher=on&amp;has_gym=on&amp;has_on_site_laundry=on&amp;has_pool=on&amp;map_center=37.36907%2C-121.93863&amp;map_zoom=9&amp;price_max=2200&amp;with_parking=on"><span class="btn-text">1</span></a></div>
+<span class="hidden hidden-xs" id="before-last-page-ellipsis">
+<i class="al al-ellipsis-h"></i>
+</span><a class="btn btn-default btn-upper hidden hidden-xs pagination-btn" data-page="1" href="/ca/santa-clara?beds%5B%5D=0&amp;beds%5B%5D=1&amp;bounds=36.56204%2C-123.00087%2C38.17099%2C-120.87639&amp;has_air_conditioning=on&amp;has_dishwasher=on&amp;has_gym=on&amp;has_on_site_laundry=on&amp;has_pool=on&amp;map_center=37.36907%2C-121.93863&amp;map_zoom=9&amp;price_max=2200&amp;with_parking=on" id="last-page-btn"><span class="btn-text">1</span></a><a class="btn btn-default btn-upper hidden pagination-btn" data-page="2" href="/ca/santa-clara/page-2?beds%5B%5D=0&amp;beds%5B%5D=1&amp;bounds=36.56204%2C-123.00087%2C38.17099%2C-120.87639&amp;has_air_conditioning=on&amp;has_dishwasher=on&amp;has_gym=on&amp;has_on_site_laundry=on&amp;has_pool=on&amp;map_center=37.36907%2C-121.93863&amp;map_zoom=9&amp;price_max=2200&amp;with_parking=on" id="next-page-btn"><span class="btn-text">Next</span>
+<i class="al al-angle-right"></i></a></div>
+
+</div>
+</div>
+<div class="col-md-6 col-md-map hidden-xs hidden-sm" id="map-col">
+<div class="row" id="map-row">
+<div id="map-sticky-container">
+<div id="map"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div id="guide">
+
+</div>
+<div id="rental-price-monitor">
+
+</div>
+<div id="ila-wrapper-row">
+<div id="ila-wrapper">
+<div class="container">
+<div class="ila-container" id="ila-cities">
+<h3 class="hidden-xs">Nearby Cities</h3>
+<div class="ila-menu hidden-sm hidden-md hidden-lg" data-caret="#ila-cities .ila-menu-btn .al-angle-down" data-expander="data-expander" data-target="#ila-cities .ila-menu-list">
+<div class="ila-menu-btn">
+<span class="ila-menu-title">Nearby Cities</span>
+<i class="al al-angle-down"></i>
+</div>
+</div>
+<div class="ila-menu-list">
+<div class="row">
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/alum-rock">Alum Rock, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/campbell">Campbell, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/cupertino">Cupertino, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/fremont">Fremont, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/los-altos">Los Altos, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/los-gatos">Los Gatos, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/milpitas">Milpitas, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/mountain-view">Mountain View, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/palo-alto">Palo Alto, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/san-jose">San Jose, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/saratoga">Saratoga, CA</a>
+</div>
+<div class="ila-col col-sm-4 col-md-3 col-lg-2">
+<a href="/ca/sunnyvale">Sunnyvale, CA</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<footer class="hidden-map hidden-slideshow">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-3 col-md-2" id="logo">
+<img src="https://cdn0.apartmentlist.com/assets/apartmentlist/footer_logo-1425f4e7e7b70a1333f045ca7e88ff8a.png" />
+</div>
+<div class="col-xs-9 col-sm-8 col-md-9 text-uppercase" id="links">
+<a href="http://blog.apartmentlist.com/about/">About Us</a>
+<a href="/about/privacy">Privacy Policy</a>
+<a href="/about/terms">Terms of Use</a>
+</div>
+<div class="col-xs-3 col-sm-1 text-right" id="equal-housing">
+<img alt="Equal housing logo" src="https://cdn2.apartmentlist.com/assets/common/EHO_logo-a2d91cd2a6d24833d1a8b24346fd6b01.svg" />
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+<div aria-hidden="true" class="modal" data-backdrop="static" data-keyboard="false" id="loading-modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<img src="https://cdn1.apartmentlist.com/assets/apartmentlist/preload-petite-b82aea1d2d3e10d2c5c4d5c9809aab33.gif" />
+</div>
+</div>
+</div>
+
+<div class="hidden" id="srp-ads">
+<div class="listing ad afs-ad col-xs-12 col-sm-6 col-md-touch adsense" id="afs-ad-inter-listing">
+<div class="listing-image row"></div>
+<div class="listing-details row"></div>
+<div class="listing-price-and-size row"></div>
+<div class="listing-snippet row"></div>
+<div class="ad-container hidden-md hidden-lg" id="mobile-ad-srp-inter-listing"></div>
+<div class="ad-container hidden-xs hidden-sm" id="desktop-ad-srp-inter-listing"></div>
+</div>
+
+<div class="listing ad display-ad col-md-touch col-lg-6 adsense hidden-xs hidden-sm hidden-md" id="display-ad-inter-listing">
+<div class="listing-image row"></div>
+<div class="listing-details row"></div>
+<div class="listing-price-and-size row"></div>
+<div class="listing-snippet row"></div>
+<div class="ad-container" id="desktop-ad-srp-display"></div>
+</div>
+
+<div id="bottom-ads">
+<div class="afs-ad afs-ad-bottom col-xs-12 adsense hidden-sm hidden-md hidden-lg" id="xs-afs-bottom">
+<div class="ad-container" id="mobile-ad-srp-bottom"></div>
+</div>
+<div class="listing ad afs-ad afs-ad-bottom col-xs-12 col-md-touch col-sm-6 adsense hidden-xs">
+<div class="listing-image row"></div>
+<div class="listing-details row"></div>
+<div class="listing-price-and-size row"></div>
+<div class="listing-snippet row"></div>
+<div class="ad-container hidden-md hidden-lg" id="tablet-ad-srp-bottom"></div>
+<div class="ad-container hidden-xs hidden-sm" id="desktop-ad-srp-bottom"></div>
+</div>
+
+</div>
+</div>
+
+<div class="listing listing-callout filter-toggle col-xs-12 col-sm-6 col-md-touch hidden" id="filter-callout">
+<div class="listing-image row"></div>
+<div class="listing-details row"></div>
+<div class="listing-price-and-size row"></div>
+<div class="listing-snippet row"></div>
+<div class="callout-container text-center">
+<div class="callout-center-vertically">
+<div class="callout-text">
+There are
+<br />
+<span class="filter-callout-count">
+<span id="filter-callout-count">1023</span>
+more apartments
+</span>
+<br />
+<span id="filter-callout-preposition">in</span>
+<span id="filter-callout-location">Santa Clara, CA</span>
+</div>
+<div class="callout-actions">
+<button class="btn btn-primary" type="button">Change Your Filters</button>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  //<![CDATA[
+    window.quizJson = {"show_quiz":false,"test_name":"quiz-test-36","desktop_test_variation":"desktop-control","mobile_test_variation":"mobile-control"};
+    window.srpJson = {"current_page":1,"description":"Here are the top Santa Clara Apartments for Rent ASAP. View photos, floor plans \u0026 more. Which one would you live in?","desktop_search_test_variation":null,"limit_reached":false,"listing_pins":[],"listings":[],"location":{"id":649626,"slug":"/ca/santa-clara","type":"city","name":"Santa Clara","display_name":"Santa Clara, CA","long_name":"Santa Clara, California","bounds":{"ne":{"lat":37.41876,"lon":-121.929689},"sw":{"lat":37.32295,"lon":-122.00457}},"coordinates":{"lat":37.36493440503688,"lon":-121.96784784634092},"parents":{"state":{"id":257082,"slug":"/ca","type":"state","name":"CA","display_name":"California","long_name":"California","bounds":{"ne":{"lat":42.009517,"lon":-114.131211},"sw":{"lat":32.534157,"lon":-124.415012}},"coordinates":{"lat":37.24599593405295,"lon":-119.60917652162196},"parents":{}}}},"map_bounds":{"sw_lat":36.56204,"sw_lon":-123.00087,"ne_lat":38.17099,"ne_lon":-120.87639},"map_bounds_too_large":true,"map_position":{"center":{"lat":"37.36907","lon":"-121.93863"},"zoom":"9"},"map_search_enabled":true,"mobile_search_test_variation":null,"nfm_rid":null,"search_filters":{"apartments":false,"baths":[],"beds":[0,1],"condos":false,"has_air_conditioning":true,"has_balcony":false,"has_dishwasher":true,"has_elevator":false,"has_furnished_option":false,"has_garage":false,"has_gym":true,"has_hardwood_floors":false,"has_in_unit_laundry":false,"has_laundry_connections":false,"has_on_site_laundry":true,"has_pool":true,"houses":false,"is_accessible":false,"is_cat_friendly":false,"is_dog_friendly":false,"is_pet_friendly":false,"price_max":2200,"verified":false,"with_parking":true},"search_test_name":"search-test-2","section_offsets":{},"show_ads":true,"show_featured_pins":true,"title":"20 Best Apartments in Santa Clara, CA (with pictures)!"};
+  //]]>
+</script>
+</body></html>
