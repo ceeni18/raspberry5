@@ -14,4 +14,4 @@ Fitbit: We have represented the daily and weekly step count of a user through th
 
 Box.com: An online storage space for photos from the user's phone. When user logs into the dashboard using his/her credentials, the pi module establishes connection with the box.com account and allows users to sync photos from mobile phones to the cloud storage.
 
-Home Monitoring: A surveillance system using the camera from the RPi 2 board. We have created a small video recording using python scripts.
+Home Monitoring: A surveillance system using the camera from the RPi 2 board. We have created a small video recording using python scripts.This video can be accessed at https://app.box.com/s/wnjka871of2qx1am12h20526cc1yh64n 
