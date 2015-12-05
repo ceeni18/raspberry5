@@ -1,0 +1,99 @@
+#V1 - Minute by minute data
+#V2 - Summary data added
+
+import fitbit
+from datetime import datetime, timedelta
+
+#Constants
+CLIENT_KEY_CEEENI = '9c1331ceb2b4a3938811fed9461dc5e5'
+CLIENT_SECRET_CEEENI = '951f312b1119ab62857fea944926f78e'
+USER_KEY_CEEENI = '0a47a756835b7b40707366a4c96cff86'
+USER_SECRET_CEEENI = '91adccc9add0bb7e87690558eafd2581'
+
+CLIENT_KEY_NANCY = '1b1331ceb2b4a3938811fed9461dc5r6'
+CLIENT_SECRET_NANCY = '351f312b1119ab62857fea944926f77'
+USER_KEY_NANCY = '6y47a756835b7b40707366a4c96cfr56'
+USER_SECRET_NANCY = '26adccc9add0bb7e87690558eafd2998'
+
+CLIENT_KEY_NEHA = '8c1331ceb2b4a39283hieed9461dc5r0'
+CLIENT_SECRET_NEHA = '751f312b1119bb28337fea944926f76f'
+USER_KEY_NEHA = '259756835b7b40707366a4c96cfr98'
+USER_SECRET_NEHA = '92adccc9add0bb7e87690558eafd9865'
+
+CLIENT_KEY_TANIA = '9k1331ceb2b4a3938811fed9461dc5p5'
+CLIENT_SECRET_TANIA = '851f312b1119ab62857fea944926f7609'
+USER_KEY_TANIA = '1f47a756835b7b40707366a4c96cfryt'
+USER_SECRET_TANIA = '28adccc9add0bb7e87690558eafd29th'
+
+#The first date I used Fitbit
+FirstFitbitDate = '2015-10-1'
+
+#Determine how many days to process for.  First day I ever logged was 2015-01-27
+def CountTheDays():
+  #See how many days there's been between today and my first Fitbit date.
+  now = datetime.now()                                         #Todays date
+  FirstDate = datetime.strptime(FirstFitbitDate,"%Y-%m-%d")    #First Fitbit date as a Python date object
+
+  #Calculate difference between the two and return it
+  return abs((now - FirstDate).days)
+
+#Produce a date in yyyy-mm-dd format that is n days before today's date (where n is a passed parameter)
+def ComputeADate(DaysDiff):
+  #Get today's date
+  now = datetime.now()
+
+  #Compute the difference betwen now and the day difference paremeter passed
+  DateResult = now - timedelta(days=DaysDiff)
+  return DateResult.strftime("%Y-%m-%d")
+
+#read from file - json passes, request auth_name
+
+#txt = open(filename)
+#auth_name = text.read()
+#if (auth_name == "ceeeni")
+	#Get a client
+#align indent here
+authd_client = fitbit.Fitbit(CLIENT_KEY_CEEENI, CLIENT_SECRET_CEEENI, resource_owner_key=USER_KEY_CEEENI, resource_owner_secret=USER_SECRET_CEEENI)
+
+#Find out how many days to compute for
+DayCount = CountTheDays()
+
+#Open a file to write the output - minute by minute and summary
+FileToWrite = '/home/fitbit/cmpe273/sleep/' + 'minuteByMinute_' + datetime.now().strftime("%Y-%m-%d") + '.csv'
+MyFile = open(FileToWrite,'w')
+# put to /sleep/ceeni or /sleep/neha or /sleep/nancy for specific folders
+SummaryFileToWrite = '/home/fitbit/cmpe273/sleep/' + 'summary_' + datetime.now().strftime("%Y-%m-%d") + '.csv'
+SummaryFile = open(SummaryFileToWrite,'w')
+
+#Process each one of these days stepping back in the for loop and thus stepping up in time
+for i in range(DayCount,-1,-1):
+  #Get the date to process
+  DateForAPI = ComputeADate(i)
+
+  #Tell the user what is happening
+  print 'Processing this date: ' + DateForAPI
+
+  #Get sleep
+  fitbit_sleep = authd_client._COLLECTION_RESOURCE('sleep',DateForAPI)
+
+  #Get the total minutes in bed value.  This will control our loop that gets the sleep
+  MinsInBed = fitbit_sleep['sleep'][0]['timeInBed']
+
+  #Get the total sleep value
+  MinsAsleep = fitbit_sleep['sleep'][0]['minutesAsleep']
+
+  #Loop through the lot
+  for i in range(0,MinsInBed):
+    SleepVal = fitbit_sleep['sleep'][0]['minuteData'][i]['value']
+    TimeVal = fitbit_sleep['sleep'][0]['minuteData'][i]['dateTime']
+    MyFile.write(DateForAPI + ',' + TimeVal + ',' + SleepVal + '\r\n')
+    #If this is the first itteration of the loop grab the time which says when I got to bed
+    if (i == 0):
+      FirstTimeInBed = TimeVal
+
+  #Write a log of summary data
+  SummaryFile.write(DateForAPI + ',' + str(MinsInBed) + ',' + str(MinsAsleep) + ',' + FirstTimeInBed + '\r\n')
+#We're now at the end of theloops.  Close the file
+MyFile.close()
+SummaryFile.close()
+
